@@ -1,0 +1,154 @@
+@media (max-width:575px){
+    /* Common CSS Design */
+
+    h1,
+    h2,
+    h3,
+    h4{
+        text-align: center;
+    }
+
+    .section-padding{
+        padding: 50px 0;
+    }
+
+/* Header CSS Design */
+    .navbar-nav{
+        text-align: center;
+    }
+    .navbar-brand img{
+        width: 180px;
+    }
+
+
+
+    .home-form .d-flex{
+        flex-direction: column;
+    }
+
+    .home-form
+     input:last-child{
+        margin-top: 15px;
+        font-size: 14px;
+     }
+
+
+/* Sponser CSS Design */
+     .sponser{
+        flex-direction: column;
+        margin-bottom: 40px;
+     }
+
+     .sponser-item{
+        width: 100% !important;
+        max-width: 250px !important;
+        margin-bottom: 15px;
+     }
+
+     .sponser span{
+        font-size: 16px;
+        margin-bottom: 15px;
+     }
+
+     .sponser .sponser-item img{
+        max-width: 180px;
+        margin: 0 auto;
+        display: block;
+     }
+
+     .section-header h2{
+        font-size: 1.175rem ;
+        line-height: 1.4;
+    }
+
+    .section-header p{
+        font-size: 14px !important;
+    }
+
+    /* Services CSS Design */
+    .singel-service{
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .singel-service img{
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .singel-service p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.375;
+    }
+
+    /* Future section design */
+    .future-text{
+        width: 100% !important;
+        text-align: center;
+    }
+    .future-text h2{
+        margin-top: 20px;
+        font-size: 1.1rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .future-text p{
+        font-size: 0.75rem;
+
+    }
+    .future-text .d-flex{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .future-text strong{
+        font-size: 0.8;
+    }
+
+    /* Service Section design */
+
+    .service-text{
+        text-align: center;
+    }
+
+    .service-text h4{
+        font-size: 1.5rem;
+    }
+
+    .singel-work{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .singel-work span{
+        margin: 0;
+    }
+
+    .banner-content{
+        flex-direction: column;
+    }
+
+    .banner-content h2{
+        width: 100% !important;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .banner-content button{
+        padding: 4px 15px !important;
+        font-size: 1rem;
+    }
+
+    footer .singel-footer{
+        margin-bottom: 20px;
+    }
+
+
+
+
+}
+

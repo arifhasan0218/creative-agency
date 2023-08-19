@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto+Slab:wght@300&display=swap');
+
+:root {
+    --color-primary: #F94962;
+    --color-Seconadry: #183656;
+    --color-light: #F9FAFC;
+    --color-white: #fff;
+    --color-dark: #0F2137;
+    --color-gray: #566272;
+    --heading-font: 'Bree Serif', serif;
+    --smat-text-font: 'DM Sans', sans-serif;
+    --box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+/* <!--=================================================================================================
+Custom Css Section
+====================================================================================================--> */
+body {
+    font-family: var();
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3 {
+    color: #02073E;
+    font-family: var(--heading-font);
+}
+ol,
+ul{
+    list-style: none;
+}
+
+.btn-main {
+    background: var(--color-primary);
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--smat-text-font);
+    outline-offset: 0;
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s ease-in;
+    border-radius: 8px;
+}
+
+:focus{
+    outline: 0;
+}
+
+.btn-main:hover {
+    background: transparent;
+    color: var(--color-dark);
+    border: 2px solid var(--color-primary);
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+.section-header{
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.top-space{
+    margin-top: 90px;
+}
+
+/* <!--=================================================================================================
+NAvbar Css Section
+====================================================================================================--> */
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+.navbar-brand img{
+    width: 260px;
+}
+.nav-link{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-dark) !important;
+    position: relative;
+}
+.nav-link::after{
+    background: url('img/Path\ 49.png');
+    width: 0%;
+    height: 4px;
+    content: '';
+    position: absolute;
+    left: 0;
+    background-size:cover;
+    top: 40px;
+    transition: width 0.3s linear;
+    transform-origin: center;
+}
+.nav-link:hover::after{
+width: 100%;
+}
+
+
+.bg-effect::after{
+    background: url('img/Path\ 49.png');
+    width: 100%;
+    height: 4px;
+    content: '';
+    position: absolute;
+    left: 0;
+    background-size:cover;
+    top: 40px;
+}
+
+.nav-link:hover,
+.active
+{
+    color: var(--color-primary) !important;
+}
+
+/* <!--=================================================================================================
+Header Section Design
+====================================================================================================--> */
+.home{
+    height: 100vh;
+}
+.home-text h1{
+    /* font-size: 3.475rem; */
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.home-text p{
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.4;
+    font-family: var(--smat-text-font);
+    font-weight: 400;
+}
+
+.sponser img{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.sponser span{
+    color: var(--color-gray);
+}
+/* <!--=================================================================================================
+Service Section Design
+====================================================================================================--> */
+
+.section-header h2{
+    font-size: 2.375rem;
+    display: inline-block;
+}
+
+h2::after{
+    content: '';
+    width: 5px;
+    height: 100%;
+    left: -20px;
+    top: 0;
+    background: var(--color-primary);
+    position: absolute;
+}
+
+.singel-service img{
+    align-self: self-start;
+    margin-right: 20px;
+    width: 50px;
+}
+
+.singel-service h2{
+    font-size: 1.25rem;
+    font-family: var(--smat-text-font) !important;
+}
+
+.singel-service p{
+    font-size: 1rem;
+    line-height: 1.9;
+}
+/* <!--=================================================================================================
+Future Section Design
+====================================================================================================--> */
+.future{
+    background: var(--color-light);
+    position: relative;
+}
+
+.future-img img{
+    max-width: 500px;
+    width: 100%;
+}
+.future-text h2{
+    font-size: 2.5rem;
+    line-height: 1.4;
+}
+
+.future-text p{
+    line-height: 1.6;
+    font-family: var(--smat-text-font);
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.future-text a{
+    margin-top: 20px;
+    color: var(--color-primary);
+    transition: padding 0.3s ease-in;
+    font-weight: 500;
+    font-family: var(--smat-text-font);
+}
+
+.future-text a:hover i{
+    padding-right: 10px;
+}
+.future-text img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.future::after{
+    content: '';
+    background: url('img/stripe.png');
+    width: 476px;
+    height: 309px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -198px;
+    right: 545px;
+}
+
+/* <!--=================================================================================================
+User Section Design
+====================================================================================================--> */
+.users{
+    width: 100%;
+    max-width: 768px;
+}
+/* <!--=================================================================================================
+Work Section Design
+====================================================================================================--> */
+.work{
+    background: var(--color-light);
+}
+
+.singel-work span{
+    margin-right: 20px;
+    font-size: 3rem;
+    font-family: 'roboto Slab', serif;
+}
+
+.singel-work h2{
+    font-family: var(--smat-text-font);
+}
+/* <!--=================================================================================================
+Work Section Design
+====================================================================================================--> */
+/* <!--=================================================================================================
+Team Section Design
+====================================================================================================--> */
+.team img{
+    width: 100%;
+    max-width: 580px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom-banner{
+    background: var(--color-Seconadry);
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.contact-btn{
+    background: var(--color-light);
+    padding: 10px 30px;
+    color: var(--color-dark);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--smat-text-font);
+    outline-offset: 0;
+    border: 2px solid var(--color-white);
+    transition: all 0.3s ease-in;
+    border-radius: 8px;
+}
+.contact-btn:hover{
+    border: 2px solid var(--color-white);
+    background: transparent;
+    color: var(--color-light);
+}
+
+/* <!--=================================================================================================
+Footer Section Design
+====================================================================================================--> */
+.singel-footer .brand-logo img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.singel-footer p{
+    margin-bottom: 15px;
+}
+.singel-footer li{
+    margin-bottom: 15px;
+}
+.singel-footer a{
+    color: var(--color-dark);
+    font-size: 16px;
+    font-family: var(--smat-text-font);
+}
