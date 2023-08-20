@@ -311,10 +311,29 @@ Team Section Design
 /* <!--=================================================================================================
 Footer Section Design
 ====================================================================================================--> */
+
+footer{
+    background: var(--color-dark);
+    color: #fff;
+}
+footer ul li{
+    margin-bottom: 5px !important;
+}
+
+footer ul li a{
+    color: #fff !important;
+}
 .singel-footer .brand-logo img{
     width: 180px;
     margin-bottom: 20px;
+    filter: invert(100%);
 }
+.singel-footer{
+    position: relative;
+    margin-bottom: 30px !important;
+}
+
+
 
 .singel-footer p{
     margin-bottom: 15px;

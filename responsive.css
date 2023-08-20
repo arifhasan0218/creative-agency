@@ -32,6 +32,10 @@
         font-size: 14px;
      }
 
+     .home-text p {
+        text-align: center;
+    }
+
 
 /* Sponser CSS Design */
      .sponser{
@@ -109,6 +113,22 @@
         font-size: 0.8;
     }
 
+    .singel-work h4{
+        font-size: 1.4rem !important;
+        line-height: 1.4;
+        font-family: var(--smat-text-font);
+    }
+
+    .singel-work p{
+        font-size: 0.925rem;
+        line-height: 1.2;
+    }
+
+    .singel-work span{
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
     /* Service Section design */
 
     .service-text{
@@ -147,6 +167,33 @@
         margin-bottom: 20px;
     }
 
+    .singel-footer::after{
+        border-bottom: 2px solid var(--color-gray);
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+    }
+    .singel-footer::after:last-child {
+        display: none !important;
+        border: 0;
+    }
+
+    .future-img img {
+        max-width: 300px;
+        width: 100%;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .img-fluid {
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
 
 
 
